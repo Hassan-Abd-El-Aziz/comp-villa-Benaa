@@ -72,24 +72,25 @@ const toggleMenu = () => {
 
     </div>
 
-    <!-- Mobile Menu Overlay -->
-    <div 
-      class="fixed inset-0 bg-primary-dark/95 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-8 transition-all duration-500 md:hidden"
-      :class="mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'"
-    >
-      <a href="#projects" class="text-2xl font-display font-bold text-white hover:text-accent-gold transition-colors" @click="toggleMenu">{{ t.nav.projects }}</a>
-      <a href="#services" class="text-2xl font-display font-bold text-white hover:text-accent-gold transition-colors" @click="toggleMenu">{{ t.nav.services }}</a>
-      <a href="#process" class="text-2xl font-display font-bold text-white hover:text-accent-gold transition-colors" @click="toggleMenu">{{ t.nav.process }}</a>
-      <a href="#about" class="text-2xl font-display font-bold text-white hover:text-accent-gold transition-colors" @click="toggleMenu">{{ t.nav.about }}</a>
-      <a href="#contact" class="text-2xl font-display font-bold text-white hover:text-accent-gold transition-colors" @click="toggleMenu">{{ t.nav.contact }}</a>
-      
-      <button @click="toggleLanguage" class="mt-4 px-8 py-3 border border-white/20 text-white font-bold tracking-wide">
-        {{ t.nav.lang === 'AR' ? 'العربية' : 'English' }}
-      </button>
-      
-      <a href="#contact" @click="toggleMenu" class="mt-4 px-8 py-3 bg-accent-gold text-black font-bold tracking-wide text-center">
-        {{ t.nav.request }}
-      </a>
-    </div>
   </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div 
+    class="fixed inset-0 bg-primary-dark/95 backdrop-blur-3xl z-40 flex flex-col items-center justify-center gap-8 transition-all duration-500 md:hidden"
+    :class="mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'"
+  >
+    <a href="#projects" class="text-2xl font-display font-bold text-white hover:text-accent-gold transition-colors" @click="toggleMenu">{{ t.nav.projects }}</a>
+    <a href="#services" class="text-2xl font-display font-bold text-white hover:text-accent-gold transition-colors" @click="toggleMenu">{{ t.nav.services }}</a>
+    <a href="#process" class="text-2xl font-display font-bold text-white hover:text-accent-gold transition-colors" @click="toggleMenu">{{ t.nav.process }}</a>
+    <a href="#about" class="text-2xl font-display font-bold text-white hover:text-accent-gold transition-colors" @click="toggleMenu">{{ t.nav.about }}</a>
+    <a href="#contact" class="text-2xl font-display font-bold text-white hover:text-accent-gold transition-colors" @click="toggleMenu">{{ t.nav.contact }}</a>
+    
+    <button @click="toggleLanguage" class="mt-4 px-8 py-3 border border-white/20 text-white font-bold tracking-wide">
+      {{ t.nav.lang === 'AR' ? 'العربية' : 'English' }}
+    </button>
+    
+    <a href="#contact" @click="toggleMenu" class="mt-4 px-8 py-3 bg-accent-gold text-black font-bold tracking-wide text-center">
+      {{ t.nav.request }}
+    </a>
+  </div>
 </template>
