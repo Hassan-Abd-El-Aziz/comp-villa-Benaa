@@ -12,7 +12,8 @@ const projects = [
   { id: 1, name: 'The Obsidian Tower', location: 'Dubai, UAE', type: 'Commercial', area: '45,000 m²', status: 'Completed', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop' },
   { id: 2, name: 'Aura Luxury Villas', location: 'Riyadh, KSA', type: 'Residential', area: '12,000 m²', status: 'Completed', image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop' },
   { id: 3, name: 'Nexus Administrative Complex', location: 'Cairo, Egypt', type: 'Administrative', area: '85,000 m²', status: 'Under Construction', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop' },
-  { id: 4, name: 'Crescent Bay Resort', location: 'Doha, Qatar', type: 'Hospitality', area: '120,000 m²', status: 'Completed', image: 'https://images.unsplash.com/photo-1551882547-ff40c0d5b9af?q=80&w=2071&auto=format&fit=crop' }
+  { id: 4, name: 'Crescent Bay Resort', location: 'Doha, Qatar', type: 'Hospitality', area: '120,000 m²', status: 'Completed', image: 'https://images.unsplash.com/photo-1551882547-ff40c0d5b9af?q=80&w=2071&auto=format&fit=crop' },
+  { id: 5, name: 'Royal Palm Hotel & Spa', location: 'Sharm El Sheikh, Egypt', type: 'Hospitality', area: '200,000 m²', status: 'Completed', image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop' }
 ];
 
 const getCategoryName = (engCat: string) => {
